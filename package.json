@@ -29,7 +29,7 @@
   },
   "scripts": {
     "react-start": "react-scripts start",
-    "start": "start npm run json-server && start npm run react-start",
+    "start": "npx json-server --watch db.json --port 8000 && react-start",
     "json-server": "npx json-server --watch db.json --port 8000",
     "build": "react-scripts build",
     "test": "react-scripts test",
